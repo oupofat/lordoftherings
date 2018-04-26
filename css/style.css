@@ -3,13 +3,21 @@ body {
 }
 
 .column {
-	float: left;
-
+	display: inline-block;
 	padding: 10px;
 }
 
 #main:after {
-	content: "";
+
+	content: " ";
 	display: table;
 	clear: both;
+}
+
+img {
+	max-width: 100%;
+}
+#img1:hover {
+	opacity: 0.1;
+	
 }
