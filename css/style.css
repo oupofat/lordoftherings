@@ -1,0 +1,15 @@
+body {
+	background-image: url(background.jpg);
+}
+
+.column {
+	float: left;
+
+	padding: 10px;
+}
+
+#main:after {
+	content: "";
+	display: table;
+	clear: both;
+}
