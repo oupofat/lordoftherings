@@ -1,23 +1,112 @@
+@font-face {
+	font-family: ring;
+	src: url(ring.ttf)
+}
+
+
 body {
-	background-image: url(background.jpg);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.column {
-	display: inline-block;
-	padding: 10px;
+h1 {
+	color: gold;
+	font-family: ring;
+	text-align: center;
+	margin-top: 40px;
+	font-size: 55px;
 }
 
-#main:after {
-
-	content: " ";
-	display: table;
-	clear: both;
-}
-
-img {
+#img1 {
 	max-width: 100%;
+	padding: 1px;
+	border: 1px solid yellow;
+	background-color: rgba(255, 255, 0, 0.2);
+	box-shadow: 0 8px 10px 0 rgba(192, 189, 17, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:
 }
+
 #img1:hover {
-	opacity: 0.1;
-	
+	opacity: 0.7;
+
+}
+
+footer {
+	text-align: center;
+	clear: left;
+	color: gold;
+
+}
+
+.fa {
+	padding: 5px;
+	font-size: 10px;
+	width: 10px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: gold;
+	color: forestgreen;
+	border-radius: 50%;
+}
+
+.fa-twitter {
+	background: gold;
+	color: forestgreen;
+	border-radius: 50%;
+}
+
+.flex-grid {
+	display: flex;
+}
+
+.flex-grid .col {
+	flex: 1;
+}
+
+.flex-grid-thirds {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-grid-thirds .col {
+	width: 32%;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+	.flex-grid,
+	.flex-grid-thirds {
+		display: block;
+	}
+	.flex-grid .col,
+	.flex-grid-thirds .col {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 20px;
+}
+
+.flex-grid {
+	margin: 0 0 20px 0;
+}
+
+.col {
+
+	padding: 20px;
 }
